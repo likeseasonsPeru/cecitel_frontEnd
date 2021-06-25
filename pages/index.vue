@@ -1,20 +1,34 @@
 <template>
-  <div class="container">
+  <div>
     <div>
-      <Logo />
-      <h1 class="title">cecitel</h1>
+      <Homer />
+      <About />
+      <Categories />
+      <Skills />
+      <OurTeachers />
+      <Brands />
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+import Homer from '@/components/partials/home/Homer.vue'
+import About from '@/components/partials/home/About.vue'
+import Categories from '@/components/partials/home/Categories.vue'
+import Skills from '@/components/partials/home/Skills.vue'
+import OurTeachers from '@/components/partials/home/OurTeachers.vue'
+import Brands from '@/components/partials/home/Brands.vue'
+
+export default {
+  name: 'Index',
+  components: { Homer, About, Categories, Skills, OurTeachers, Brands },
+}
 </script>
 
 <style>
 .container {
   margin: 0 auto;
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
