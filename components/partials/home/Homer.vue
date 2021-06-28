@@ -1,7 +1,7 @@
 <template>
-  <div class="Home">
+  <div class="Home d-flex">
     <b-container>
-      <b-row>
+      <b-row class="text-center">
         <b-col md="6" class="text-md-left">
           <h1>
             Incríbete ya a nuestras <br />
@@ -37,7 +37,9 @@ export default {
 <style lang="css">
 .Home {
   background-color: #6dadef;
-  min-height: 500px;
+  min-height: 720px;
+  justify-content: center;
+  align-items: center;
   border-radius: 0 0 0 200px;
 }
 </style>

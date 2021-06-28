@@ -7,9 +7,48 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-          <b-nav-item href="#">Cursos y más</b-nav-item>
-          <b-nav-item href="#">Webinars</b-nav-item>
-          <b-nav-item href="#">Conócenos</b-nav-item>
+          <b-nav-item-dropdown>
+            <template slot="button-content">
+              Cursos y más
+              <span style="font-size: 12px">
+                <chevron-down-icon />
+              </span>
+            </template>
+            <b-dropdown-item
+              class="navbar__subMenu text-capitalize"
+              to="/online"
+            >
+              Online
+            </b-dropdown-item>
+            <b-dropdown-item
+              class="navbar__subMenu text-capitalize"
+              to="/semipresenciales"
+            >
+              Semipresenciales
+            </b-dropdown-item>
+            <b-dropdown-item
+              class="navbar__subMenu text-capitalize"
+              to="/webinars"
+            >
+              Webinars
+            </b-dropdown-item>
+          </b-nav-item-dropdown>
+          <b-nav-item-dropdown>
+            <template slot="button-content">
+              Corporativo
+              <span style="font-size: 12px">
+                <chevron-down-icon />
+              </span>
+            </template>
+            <b-dropdown-item
+              class="navbar__subMenu text-capitalize"
+              to="/online"
+            >
+              Coaching
+            </b-dropdown-item>
+          </b-nav-item-dropdown>
+          <b-nav-item href="/corporativo">Corporativo</b-nav-item>
+          <b-nav-item href="/conocenos">Conócenos</b-nav-item>
           <b-nav-item href="#">Contáctanos</b-nav-item>
         </b-navbar-nav>
 
