@@ -1,7 +1,15 @@
 <template>
   <b-navbar class="Navbar" toggleable="lg" type="dark">
     <b-container>
-      <b-navbar-brand href="#">CECITEL</b-navbar-brand>
+      <b-navbar-brand href="/">
+        <div>
+          <img
+            :src="require('@/components/svg/logos/logo-navbar.svg')"
+            alt="Logo Cecitel"
+            class="d-inline-block align-left"
+          />
+        </div>
+      </b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -34,22 +42,23 @@
             </b-dropdown-item>
           </b-nav-item-dropdown>
           <b-nav-item-dropdown>
-            <template slot="button-content">
-              Corporativo
-              <span style="font-size: 12px">
-                <chevron-down-icon />
-              </span>
-            </template>
+            <template slot="button-content"> Corporativo </template>
             <b-dropdown-item
               class="navbar__subMenu text-capitalize"
-              to="/online"
+              to="/coaching"
             >
               Coaching
+            </b-dropdown-item>
+            <b-dropdown-item
+              class="navbar__subMenu text-capitalize"
+              to="/televentas"
+            >
+              Televentas
             </b-dropdown-item>
           </b-nav-item-dropdown>
           <b-nav-item href="/corporativo">Corporativo</b-nav-item>
           <b-nav-item href="/conocenos">Conócenos</b-nav-item>
-          <b-nav-item href="#">Contáctanos</b-nav-item>
+          <b-nav-item href="/contactanos">Contáctanos</b-nav-item>
         </b-navbar-nav>
 
         <!-- Right aligned nav items -->
