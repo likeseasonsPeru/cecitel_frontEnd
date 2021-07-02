@@ -62,17 +62,27 @@
         </b-navbar-nav>
 
         <!-- Right aligned nav items -->
-        <b-navbar-nav class="ml-auto">
+        <b-navbar-nav>
           <b-nav-form>
             <b-form-input
               size="sm"
-              class="mr-sm-2 form-input"
+              class="mx-4 form-input"
               placeholder="Buscar"
             ></b-form-input>
           </b-nav-form>
 
-          <b-nav-item href="#">c</b-nav-item>
-          <b-nav-item href="#">C</b-nav-item>
+          <span
+            ><img
+              :src="require('~/components/svg/icons/heartnav.svg')"
+              alt="icon heart"
+              class="mx-2"
+          /></span>
+          <span
+            ><img
+              :src="require('~/components/svg/icons/shopnav.svg')"
+              alt="icon shop"
+              class="mx-2"
+          /></span>
         </b-navbar-nav>
       </b-collapse>
     </b-container>
@@ -85,7 +95,6 @@ export default {
 </script>
 <style lang="css">
 .Navbar {
-  height: 50px;
   background-color: #222;
 }
 .form-input {
