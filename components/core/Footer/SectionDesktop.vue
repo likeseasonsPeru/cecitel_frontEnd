@@ -3,7 +3,13 @@
     <b-row class="mt-3 dark-grey-text d-flex justify-content-center">
       <b-col md="2" lg="2" xl="2">
         <div>
-          <div class="pb-2">CECITEL</div>
+          <div class="pb-2">
+            <img
+              :src="require('@/components/svg/logos/logo-footer.svg')"
+              alt="Logo Cecitel"
+              class="d-inline-block align-left"
+            />
+          </div>
         </div>
       </b-col>
       <b-col md="2" lg="2" xl="2">

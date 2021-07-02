@@ -22,6 +22,5 @@ export default {
 .footer-component {
   background-color: #222;
   color: #fff;
-  height: 250px;
 }
 </style>
