@@ -1,7 +1,7 @@
 <template>
   <div class="Course">
     <BannerTop :image="image" />
-    <b-container>
+    <b-container class="section">
       <b-row>
         <b-col md="9">
           <div>

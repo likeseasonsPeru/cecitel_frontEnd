@@ -21,7 +21,7 @@
         </div>
         <div>
           <span>{{ item.price }}</span> <br />
-          <b-button pill>Incríbete</b-button>
+          <b-button pill href="webinars/inscripcion">Incríbete</b-button>
         </div>
       </div>
     </b-card>

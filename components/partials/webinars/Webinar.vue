@@ -1,7 +1,7 @@
 <template>
   <div class="Webinar">
     <BannerTop :image="image" />
-    <b-container>
+    <b-container class="section">
       <div>
         <div>
           <h3 class="Webinar-title">Webinars</h3>

@@ -15,8 +15,14 @@
           /></span>
         </div>
         <div>
-          <span class="TopBar__log pr-3">Ingresar</span>
-          <span class="TopBar__sign ml-3">Registrate</span>
+          <button v-b-modal.modal-center class="TopBar__log pr-3">
+            Ingresar
+          </button>
+          <ModalLogin />
+          <button v-b-modal.modal-register class="TopBar__sign ml-3">
+            Registrate
+          </button>
+          <ModalRegister />
         </div>
       </div>
     </div>
@@ -24,8 +30,11 @@
 </template>
 
 <script>
+import ModalLogin from '~/components/partials/modals/ModalLogin.vue'
+import ModalRegister from '~/components/partials/modals/ModalRegister.vue'
 export default {
   name: 'TopBar',
+  components: { ModalLogin, ModalRegister },
 }
 </script>
 <style scoped>
@@ -46,10 +55,14 @@ span {
 .TopBar__log {
   font-size: 21px;
   line-height: 31px;
+  border: none;
   color: #7ddddd;
   border-right: 1px solid #a6a6a6;
+  background: none;
 }
 .TopBar__sign {
+  border: none;
+  background: none;
   font-weight: bold;
   font-size: 21px;
   line-height: 31px;
