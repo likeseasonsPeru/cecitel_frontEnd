@@ -1,6 +1,6 @@
 <template>
   <div>
-    <TopBar class="d-none d-sm-none d-md-block" />
+    <TopBar class="d-md-block" />
     <NavBar />
     <Nuxt />
     <Footer />
@@ -14,3 +14,9 @@ export default {
   components: { NavBar, TopBar, Footer },
 }
 </script>
+
+<style lang="css">
+.section {
+  padding: 60px 15px;
+}
+</style>

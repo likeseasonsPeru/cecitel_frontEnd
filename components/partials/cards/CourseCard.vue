@@ -47,8 +47,6 @@ export default {
 
 <style lang="css" scoped>
 .card {
-  max-width: 250px;
-  max-height: 400px;
   border: none;
 }
 .CourseCard {

@@ -1,7 +1,7 @@
 <template>
   <div class="Corporate">
     <BannerTop :image="image" />
-    <b-container>
+    <b-container class="section">
       <div>
         <div>
           <h3 class="Corporate-title">Corporativo</h3>

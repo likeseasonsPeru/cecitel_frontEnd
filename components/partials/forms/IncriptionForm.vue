@@ -1,8 +1,7 @@
 <template>
   <div class="ContactForm">
     <div>
-      <h3>Escríbenos</h3>
-      <span>Y recibe atención personalizada</span>
+      <h3>Inscribíbete aquí</h3>
     </div>
     <div>
       <b-form v-if="show" @submit.prevent="onSubmit">
@@ -41,32 +40,6 @@
           ></b-form-input>
         </b-form-group>
 
-        <b-form-group
-          id="input-group-3"
-          label="¿ A qué hora puedo llamarte ?"
-          label-for="input-3"
-        >
-          <b-form-select
-            id="input-3"
-            v-model="form.hours"
-            :options="hours"
-            required
-          ></b-form-select>
-        </b-form-group>
-        <b-form-group
-          id="commentary-group"
-          label="Mensaje"
-          label-for="unid-input"
-          label-class="label-form"
-        >
-          <b-form-textarea
-            id="commentary-input"
-            v-model="form.commentary"
-            rows="3"
-            name="commentary-input"
-          ></b-form-textarea>
-        </b-form-group>
-
         <b-form-group id="input-group-4" v-slot="{ ariaDescribedby }">
           <b-form-checkbox-group
             id="checkboxes-4"
@@ -82,10 +55,42 @@
             >
           </b-form-checkbox-group>
         </b-form-group>
-
-        <b-button class="text-center" type="submit" variant="primary"
-          >Enviar</b-button
-        >
+        <div>
+          <div>
+            <span>TOTAL</span>
+            <span>s/ 50.00</span>
+          </div>
+          <b-button pill block type="submit" href="/webinars/pagar"
+            >Pagar</b-button
+          >
+          <span class="CourseCard__free">Quedan disponibles 3 cupos</span>
+          <div class="CourseCard__icons my-3">
+            <div>
+              <img
+                :src="require('@/assets/img/courses/icons/shop.svg')"
+                alt=""
+              />
+              <br />
+              <span class="CourseCard__icons-name">Carrito</span>
+            </div>
+            <div>
+              <img
+                :src="require('@/assets/img/courses/icons/heart.svg')"
+                alt=""
+              />
+              <br />
+              <span class="CourseCard__icons-name">Favoritos</span>
+            </div>
+            <div>
+              <img
+                :src="require('@/assets/img/courses/icons/share.svg')"
+                alt=""
+              />
+              <br />
+              <span class="CourseCard__icons-name">Compartir</span>
+            </div>
+          </div>
+        </div>
       </b-form>
     </div>
   </div>
@@ -93,26 +98,15 @@
 
 <script>
 export default {
-  name: 'ContactForm',
+  name: 'InscriptionForm',
   data() {
     return {
       form: {
         email: '',
         nameCompleted: '',
         form: null,
-        hours: null,
         checked: [],
-        commentary: '',
       },
-      hours: [
-        { text: 'Selecciona un horario', value: null },
-        '9:00 am a 10:00 am',
-        '10:00 am a 11:00 am',
-        '11:00 am a 12:00 pm',
-        '12:00 pm a 1:00 pm',
-        '1:00 pm a 2:00 pm',
-        '2:00 pm a 3:00 pm',
-      ],
       show: true,
     }
   },

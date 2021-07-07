@@ -1,5 +1,5 @@
 <template>
-  <div class="Contactanos">
+  <div class="section">
     <ContactUs />
   </div>
 </template>
@@ -11,9 +11,3 @@ export default {
   components: { ContactUs },
 }
 </script>
-
-<style>
-.Contactanos {
-  font-size: 18px;
-}
-</style>
